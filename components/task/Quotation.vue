@@ -92,6 +92,7 @@ const exportPdf = () => {
     laborCost: laborCost.value,
     fixedOverheads: fixedOverheads.value,
     targetMargin: targetMargin.value,
+    ai_suggestions: ai_suggestions.value,
   });
 };
 
@@ -103,6 +104,7 @@ const exportCsv = () => {
     laborCost: laborCost.value,
     fixedOverheads: fixedOverheads.value,
     targetMargin: targetMargin.value,
+    ai_suggestions: ai_suggestions.value,
   });
 };
 </script>
