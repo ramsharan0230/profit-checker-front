@@ -1,5 +1,5 @@
 <template>
     <div>
-        <task-quote></task-quote>
+        <task-quotation></task-quotation>
     </div>
 </template>
