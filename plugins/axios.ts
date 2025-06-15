@@ -1,10 +1,11 @@
 import axios from 'axios'
 
 export default defineNuxtPlugin(() => {
+  const config = useRuntimeConfig()
+
   const api = axios.create({
-    baseURL: 'http://localhost:8000/api',
+    baseURL: config.public.apiBaseUrl,
     withCredentials: true,
-    // credentials: "include",
     headers: {
       "Content-Type": "application/json",
       'X-Requested-With': 'XMLHttpRequest'
