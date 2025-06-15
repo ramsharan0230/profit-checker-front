@@ -1,75 +1,54 @@
-# Nuxt Minimal Starter
+# 💼 Specifi Profit Optimiser — Frontend (Nuxt 3)
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This is the frontend for the **Specifi Profit Optimiser**, built using [Nuxt 3](https://nuxt.com) and Vue 3.
 
-## Setup
+It allows AV dealers to input quote data, view profitability calculations, receive AI-driven suggestions, and export professional reports.
 
-Make sure to install dependencies:
+---
+
+## ✨ Features
+
+- 🔧 **Quote Builder**
+  - Add products/services with quantity, cost, and sell price
+  - Enter labor hours, cost/hour, fixed overheads
+  - Set target profit margin
+
+- 📊 **Profitability Analysis**
+  - Calculates gross profit, margin, and health (Green, Amber, Red)
+  - Flags underperforming quotes
+
+- 🤖 **AI Suggestions (OpenAI)**
+  - Suggests pricing, product swaps, or labor adjustments
+  - Writes summaries in client-friendly language
+
+- 📦 **Product Catalog View**
+  - Displays available product list (fetched from backend)
+
+- 📤 **Export Tools**
+  - Download quote summary as PDF or CSV
+
+---
+
+## ⚙️ Project Setup
+
+### 1. Clone the Repository
 
 ```bash
-# npm
-npm install
+git clone https://github.com/your-org/profit-frontend.git
+cd profit-frontend
 
-# pnpm
-pnpm install
+### 2. Install Dependencies
+npm install 
 
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
+### 🚀 Development
+Start the dev server:
 npm run dev
 
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
+### 📦 Build & Preview (Production)
 npm run build
 
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+### 🛠 Technologies
+Nuxt 3
+Vue 3
+Tailwind CSS
+OpenAI API
