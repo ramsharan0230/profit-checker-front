@@ -34,8 +34,11 @@ It allows AV dealers to input quote data, view profitability calculations, recei
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-org/profit-frontend.git
-cd profit-frontend
+git clone https://github.com/ramsharan0230/profit-checker-front
+cd profit-checker-front
+
+### 2. create .env
+NUXT_API_BASE_URL=backend-url(exmple: http://localhost:8000/api)
 
 ### 2. Install Dependencies
 npm install 
