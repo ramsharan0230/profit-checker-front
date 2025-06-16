@@ -22,12 +22,17 @@ const ai_suggestions = ref<string>("");
 
 const loading = ref(false);
 const suggestion_loader = ref(false);
+const reports = ref<any[]>([]);
 
 const { exportReport } = useQuoteExport($axios, loading);
 
 onMounted(async () => {
   const { data } = await $axios.get("/products");
   allProducts.value = data.payload;
+
+  // fetch all reports
+  const res = await $axios.get("/report/fetch-all");
+  reports.value = res.data.payload;
 });
 
 function addItem() {
@@ -256,6 +261,7 @@ const exportCsv = () => {
         :labor-cost="laborCost"
         :fixed-overheads="fixedOverheads"
         :ai_suggestions="ai_suggestions"
+        :reports="reports"
         @export:pdf="exportPdf"
         @export:csv="exportCsv"
       />
