@@ -1,6 +1,6 @@
-# 💼 Specifi Profit Optimiser — Frontend (Nuxt 3)
+# 💼 Profit Optimiser — Frontend (Nuxt 3)
 
-This is the frontend for the **Specifi Profit Optimiser**, built using [Nuxt 3](https://nuxt.com) and Vue 3.
+This is the frontend for the **Profit Optimiser**, built using [Nuxt 3](https://nuxt.com) and Vue 3.
 
 It allows AV dealers to input quote data, view profitability calculations, receive AI-driven suggestions, and export professional reports.
 
